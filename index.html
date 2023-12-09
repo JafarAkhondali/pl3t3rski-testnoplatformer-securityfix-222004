@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Luna's Leap</title>
+    <script src="../../../lib/gl-matrix-min.js"></script>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="../../../common/style.css">
+</head>
+<body>
+    <div class="fullscreen no-touch pixelated">
+        <canvas></canvas>
+    </div>
+    <div id="progressBarContainer" style="position: absolute; top: 20px; left: 20px; width: 200px;">
+        <div id="saveEarthText" style="text-align: center; font-family: Arial, sans-serif; background-color: white; padding: 5px; border-radius: 5px;">
+            SaveEarth-o-meter
+        </div>        
+        <div style="height: 20px; background-color: #555;">
+            <div id="progressBar" style="height: 100%; width: 0%; background-color: #4CAF50;"></div>
+        </div>
+    </div>
+    <div id="jetpackFuelContainer" style="position: absolute; top: 90px; left: 20px; width: 200px; height: 20px; background-color: #555;">
+        <div id="jetpackFuelText" style="text-align: center; font-family: Arial, sans-serif; background-color: white; padding: 5px; border-radius: 5px;">
+            Jetpack Fuel [Shift]
+        </div>
+        <div id="jetpackFuelBar" style="height: 100%; width: 100%; background-color: #FF4500;"></div>
+    </div>
+    <div id="gameOverScreen" style="display: none;">
+        <div id="gameOverText">Game Over</div>
+        <p id="finalScore">Score: 0</p>
+        <p id="highScore">Highscore: 0</p>
+        <button id="restartButton">Restart Game</button>
+    </div>
+    <div id="endScreen" style="display: none;">
+        <h1>Victory!</h1>
+        <p>Congratulations, you've completed the game!</p>
+        <button id="restartGameButton">Restart Game</button>
+    </div>
+</body>
+</html>
